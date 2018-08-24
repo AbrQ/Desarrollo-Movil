@@ -9,15 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var typeButton: UIButton!
-    @IBOutlet weak var operatorOne: UILabel!
-    @IBOutlet weak var symbol: UILabel!
-    @IBOutlet weak var operatorTwo: UILabel!
     
-    var operatorOneString: String = "Operation: "
-    var symbolString: String = "Operator: "
-    var operatorTwoString: String = "Result: "
+    @IBOutlet weak var labelText: UILabel!
+    
+    var primerNumeroInfo: String = ""
+    var segundoNumeroInfo: String = ""
+    var simboloInfo: String = ""
+    
+    var primerNumero: Bool = true
+    var simbolo: Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +29,73 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        operatorOneString += sender.currentTitle!
-        operatorOne.text = operatorOneString
+        let textoIntroducido = labelText.text!
+        let textoEtiqueta = sender.titleLabel?.text
+        
+        if let texto = textoEtiqueta{
+            switch texto{
+            case "+","-","x","/":
+                if simbolo{
+                    return
+                }
+                simboloInfo = texto
+                primerNumero = false
+                simbolo = true
+                labelText.text = "\(textoIntroducido) \(simboloInfo)"
+                break
+            case "=":
+                primerNumero = true
+                simbolo = false
+                let resultado = calculo()
+                labelText.text = "\(resultado)"
+                break
+                
+            default:
+                if primerNumero{
+                    primerNumeroInfo = "\(primerNumeroInfo)\(texto)"
+                }else{
+                    segundoNumeroInfo = "\(segundoNumeroInfo)\(texto)"
+                }
+                labelText.text = "\(textoIntroducido)\(texto)"
+                break
+            }
+        }
+    }
+    
+    
+    func calculo() -> Double{
+        let primerNumero = Double(primerNumeroInfo)!
+        let segundoNumero = Double(segundoNumeroInfo)!
+        
+        primerNumeroInfo = ""
+        segundoNumeroInfo = ""
+        
+        switch simboloInfo{
+        case "+":
+            return primerNumero + segundoNumero
+        case "-":
+            return primerNumero - segundoNumero
+        case "x":
+            return primerNumero * segundoNumero
+        case "/":
+            return primerNumero / segundoNumero
+        default:
+            return 0
+        }
+    }
+    
+    @IBAction func clearScreen(_ sender: UIButton) {
+        
+        labelText.text = ""
+        primerNumeroInfo = ""
+        segundoNumeroInfo = ""
+        simboloInfo = ""
+        
+        primerNumero = true
+        simbolo = false
         
     }
     
-    @IBAction func clearButtonTapped(_ sender: UIButton) {
-        operatorOneString = ""
-        symbolString = ""
-        operatorTwoString = ""
-        operatorOne.text = operatorOneString
-        symbol.text = symbolString
-        operatorTwo.text = operatorTwoString
-    }
+    
 }
 
