@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SystemViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fin" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-um-Kl8">
+                                <rect key="frame" x="20" y="40" width="374" height="392"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sOA-mk-Bhp">
+                                <rect key="frame" x="35" y="440" width="344" height="18"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNm-pb-Ipz">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="18"/>
+                                        <state key="normal" title="Share"/>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yh-gV-PXo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vi-Gt-A5r">
+                                        <rect key="frame" x="86" y="0.0" width="86" height="18"/>
+                                        <state key="normal" title="Safari"/>
+                                        <connections>
+                                            <action selector="safariTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bq-HZ-Dg0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4io-Pj-vYq">
+                                        <rect key="frame" x="172" y="0.0" width="86" height="18"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="cameraTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDB-6p-myS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-dd-wZZ">
+                                        <rect key="frame" x="258" y="0.0" width="86" height="18"/>
+                                        <state key="normal" title="Email"/>
+                                        <connections>
+                                            <action selector="emailTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWJ-0H-NXH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Udx-um-Kl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2e6-FY-J1N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Udx-um-Kl8" secondAttribute="trailing" constant="20" id="7J3-74-RYA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sOA-mk-Bhp" secondAttribute="bottom" constant="278" id="8lb-6C-Xj6"/>
+                            <constraint firstItem="sOA-mk-Bhp" firstAttribute="top" secondItem="Udx-um-Kl8" secondAttribute="bottom" constant="8" id="AIu-uc-Q8S"/>
+                            <constraint firstItem="Udx-um-Kl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SRB-0Y-XP8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOA-mk-Bhp" secondAttribute="trailing" constant="35" id="gFs-xl-9NW"/>
+                            <constraint firstItem="sOA-mk-Bhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="pDM-jG-HgF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Udx-um-Kl8" secondAttribute="bottom" constant="304" id="zDX-mt-I38"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Udx-um-Kl8" id="8QS-9T-L8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="34.239130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fin" width="1280" height="960"/>
+    </resources>
+</document>

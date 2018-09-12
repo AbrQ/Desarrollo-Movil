@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rra-BY-WQj">
-                                            <rect key="frame" x="313" y="3" width="46" height="36"/>
+                                            <rect key="frame" x="280" y="3" width="46" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="emptyCircle"/>
                                             <state key="selected" image="checkedCircle"/>
@@ -40,6 +40,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="isCompleteButton" destination="rra-BY-WQj" id="NTI-Rh-nqs"/>
+                                    <segue destination="TKr-tZ-9gr" kind="show" identifier="showDetails" id="2ET-sf-jSw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -101,9 +102,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="9OD-5C-Ucu" kind="show" identifier="showDetails" id="yxY-fr-N96"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Ptj-BJ-Gzs">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="200"/>
@@ -224,7 +222,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8m-b8-qAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="789"/>
+            <point key="canvasLocation" x="1970" y="1272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jy5-l2-yPf">
@@ -252,7 +250,6 @@
         <image name="emptyCircle" width="399" height="390"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="psS-zx-ncr"/>
-        <segue reference="yxY-fr-N96"/>
+        <segue reference="2ET-sf-jSw"/>
     </inferredMetricsTieBreakers>
 </document>
