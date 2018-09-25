@@ -14,6 +14,9 @@
 		5717EE8B214C6CC800E8841C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5717EE8A214C6CC800E8841C /* Assets.xcassets */; };
 		5717EE8E214C6CC800E8841C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5717EE8C214C6CC800E8841C /* LaunchScreen.storyboard */; };
 		5717EE99214C6CC800E8841C /* plasticFishes_mvcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717EE98214C6CC800E8841C /* plasticFishes_mvcTests.swift */; };
+		574FCA44214C82D50016BA66 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCA43214C82D50016BA66 /* DataSource.swift */; };
+		574FCA46214C84070016BA66 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCA45214C84070016BA66 /* Fish.swift */; };
+		574FCA49214C880F0016BA66 /* FishServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCA48214C880F0016BA66 /* FishServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		5717EE94214C6CC800E8841C /* plasticFishes-mvcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "plasticFishes-mvcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5717EE98214C6CC800E8841C /* plasticFishes_mvcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plasticFishes_mvcTests.swift; sourceTree = "<group>"; };
 		5717EE9A214C6CC800E8841C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574FCA43214C82D50016BA66 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		574FCA45214C84070016BA66 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		574FCA48214C880F0016BA66 /* FishServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,12 @@
 		5717EE80214C6CC600E8841C /* plasticFishes-mvc */ = {
 			isa = PBXGroup;
 			children = (
+				574FCA47214C87900016BA66 /* services */,
+				574FCA42214C82C40016BA66 /* network */,
+				574FCA40214C71100016BA66 /* controllers */,
+				574FCA3F214C71030016BA66 /* models */,
+				574FCA41214C71170016BA66 /* views */,
 				5717EE81214C6CC600E8841C /* AppDelegate.swift */,
-				5717EE83214C6CC600E8841C /* MasterViewController.swift */,
-				5717EE85214C6CC600E8841C /* DetailViewController.swift */,
 				5717EE87214C6CC600E8841C /* Main.storyboard */,
 				5717EE8A214C6CC800E8841C /* Assets.xcassets */,
 				5717EE8C214C6CC800E8841C /* LaunchScreen.storyboard */,
@@ -97,6 +106,46 @@
 				5717EE9A214C6CC800E8841C /* Info.plist */,
 			);
 			path = "plasticFishes-mvcTests";
+			sourceTree = "<group>";
+		};
+		574FCA3F214C71030016BA66 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				574FCA45214C84070016BA66 /* Fish.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		574FCA40214C71100016BA66 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5717EE83214C6CC600E8841C /* MasterViewController.swift */,
+				5717EE85214C6CC600E8841C /* DetailViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		574FCA41214C71170016BA66 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		574FCA42214C82C40016BA66 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				574FCA43214C82D50016BA66 /* DataSource.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		574FCA47214C87900016BA66 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				574FCA48214C880F0016BA66 /* FishServices.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574FCA46214C84070016BA66 /* Fish.swift in Sources */,
+				574FCA49214C880F0016BA66 /* FishServices.swift in Sources */,
 				5717EE86214C6CC600E8841C /* DetailViewController.swift in Sources */,
 				5717EE84214C6CC600E8841C /* MasterViewController.swift in Sources */,
+				574FCA44214C82D50016BA66 /* DataSource.swift in Sources */,
 				5717EE82214C6CC600E8841C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
