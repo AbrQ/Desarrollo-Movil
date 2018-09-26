@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41E9B033C407AECD93FF6E1C /* Pods_MyOwnPlasticFishes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA141ECEEEC3458E656FA102 /* Pods_MyOwnPlasticFishes.framework */; };
 		57CF06FC2159BF8500605F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF06FB2159BF8500605F07 /* AppDelegate.swift */; };
 		57CF07052159BF8700605F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CF07042159BF8700605F07 /* Assets.xcassets */; };
 		57CF07082159BF8700605F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CF07062159BF8700605F07 /* LaunchScreen.storyboard */; };
 		57CF07132159BF8700605F07 /* MyOwnPlasticFishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF07122159BF8700605F07 /* MyOwnPlasticFishesTests.swift */; };
 		57CF07232159C0C000605F07 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF07222159C0C000605F07 /* DataSource.swift */; };
+		D1C6727FC275C5EEDEC7564D /* Pods_MyOwnPlasticFishesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51E7D85C8A67FD7EBC600C92 /* Pods-MyOwnPlasticFishes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes.debug.xcconfig"; sourceTree = "<group>"; };
 		57CF06F82159BF8500605F07 /* MyOwnPlasticFishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOwnPlasticFishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF06FB2159BF8500605F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57CF07042159BF8700605F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,11 @@
 		57CF07122159BF8700605F07 /* MyOwnPlasticFishesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOwnPlasticFishesTests.swift; sourceTree = "<group>"; };
 		57CF07142159BF8700605F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF07222159C0C000605F07 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7B9C916510C8719AD4801FA1 /* Pods-MyOwnPlasticFishes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes.release.xcconfig"; sourceTree = "<group>"; };
+		86857DCE75D1241FB2EEA0DD /* Pods-MyOwnPlasticFishesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyOwnPlasticFishesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA141ECEEEC3458E656FA102 /* Pods_MyOwnPlasticFishes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyOwnPlasticFishes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49A98390D281AA86050C562 /* Pods-MyOwnPlasticFishesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E9B033C407AECD93FF6E1C /* Pods_MyOwnPlasticFishes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C6727FC275C5EEDEC7564D /* Pods_MyOwnPlasticFishesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,8 @@
 				57CF06FA2159BF8500605F07 /* MyOwnPlasticFishes */,
 				57CF07112159BF8700605F07 /* MyOwnPlasticFishesTests */,
 				57CF06F92159BF8500605F07 /* Products */,
+				9D32E055CA7F8FCB988C463F /* Pods */,
+				6A45ADD33CC9A32D749D2A27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +145,26 @@
 			path = services;
 			sourceTree = "<group>";
 		};
+		6A45ADD33CC9A32D749D2A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA141ECEEEC3458E656FA102 /* Pods_MyOwnPlasticFishes.framework */,
+				9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D32E055CA7F8FCB988C463F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51E7D85C8A67FD7EBC600C92 /* Pods-MyOwnPlasticFishes.debug.xcconfig */,
+				7B9C916510C8719AD4801FA1 /* Pods-MyOwnPlasticFishes.release.xcconfig */,
+				E49A98390D281AA86050C562 /* Pods-MyOwnPlasticFishesTests.debug.xcconfig */,
+				86857DCE75D1241FB2EEA0DD /* Pods-MyOwnPlasticFishesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57CF07172159BF8700605F07 /* Build configuration list for PBXNativeTarget "MyOwnPlasticFishes" */;
 			buildPhases = (
+				5931BB086DEC1C908C391A92 /* [CP] Check Pods Manifest.lock */,
 				57CF06F42159BF8500605F07 /* Sources */,
 				57CF06F52159BF8500605F07 /* Frameworks */,
 				57CF06F62159BF8500605F07 /* Resources */,
@@ -157,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57CF071A2159BF8700605F07 /* Build configuration list for PBXNativeTarget "MyOwnPlasticFishesTests" */;
 			buildPhases = (
+				766DE4F392E4266AE8DA42FE /* [CP] Check Pods Manifest.lock */,
 				57CF070A2159BF8700605F07 /* Sources */,
 				57CF070B2159BF8700605F07 /* Frameworks */,
 				57CF070C2159BF8700605F07 /* Resources */,
+				FD3FF1D4942C5B843FBCC7F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +262,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5931BB086DEC1C908C391A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyOwnPlasticFishes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		766DE4F392E4266AE8DA42FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyOwnPlasticFishesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3FF1D4942C5B843FBCC7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57CF06F42159BF8500605F07 /* Sources */ = {
@@ -386,6 +490,7 @@
 		};
 		57CF07182159BF8700605F07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E7D85C8A67FD7EBC600C92 /* Pods-MyOwnPlasticFishes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +509,7 @@
 		};
 		57CF07192159BF8700605F07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B9C916510C8719AD4801FA1 /* Pods-MyOwnPlasticFishes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +528,7 @@
 		};
 		57CF071B2159BF8700605F07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49A98390D281AA86050C562 /* Pods-MyOwnPlasticFishesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -443,6 +550,7 @@
 		};
 		57CF071C2159BF8700605F07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86857DCE75D1241FB2EEA0DD /* Pods-MyOwnPlasticFishesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

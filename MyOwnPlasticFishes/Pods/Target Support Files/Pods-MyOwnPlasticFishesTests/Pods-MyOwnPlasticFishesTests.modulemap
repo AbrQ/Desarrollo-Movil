@@ -1,0 +1,6 @@
+framework module Pods_MyOwnPlasticFishesTests {
+  umbrella header "Pods-MyOwnPlasticFishesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
