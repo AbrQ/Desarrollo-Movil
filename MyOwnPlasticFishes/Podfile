@@ -6,11 +6,11 @@ target 'MyOwnPlasticFishes' do
   use_frameworks!
 
   # Pods for MyOwnPlasticFishes
+	pod 'Kingfisher', '~> 4.0'
 
   target 'MyOwnPlasticFishesTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Kingfisher', '~> 4.0'
   end
 
 end

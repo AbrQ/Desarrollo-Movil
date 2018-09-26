@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		41E9B033C407AECD93FF6E1C /* Pods_MyOwnPlasticFishes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA141ECEEEC3458E656FA102 /* Pods_MyOwnPlasticFishes.framework */; };
+		57AA7571215BE051005572F3 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA7570215BE051005572F3 /* Kingfisher.framework */; };
 		57CF06FC2159BF8500605F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF06FB2159BF8500605F07 /* AppDelegate.swift */; };
 		57CF07052159BF8700605F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CF07042159BF8700605F07 /* Assets.xcassets */; };
 		57CF07082159BF8700605F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CF07062159BF8700605F07 /* LaunchScreen.storyboard */; };
 		57CF07132159BF8700605F07 /* MyOwnPlasticFishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF07122159BF8700605F07 /* MyOwnPlasticFishesTests.swift */; };
 		57CF07232159C0C000605F07 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF07222159C0C000605F07 /* DataSource.swift */; };
+		57EBEC2C215BD48600048136 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBEC2B215BD48600048136 /* Fish.swift */; };
+		57EBEC2F215BD82500048136 /* FishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBEC2D215BD82500048136 /* FishesTableViewController.swift */; };
+		57EBEC30215BD82500048136 /* FishesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EBEC2E215BD82500048136 /* FishesTableViewController.xib */; };
+		57EBEC36215BDE3200048136 /* Pods_MyOwnPlasticFishesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */; };
 		D1C6727FC275C5EEDEC7564D /* Pods_MyOwnPlasticFishesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		51E7D85C8A67FD7EBC600C92 /* Pods-MyOwnPlasticFishes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes.debug.xcconfig"; sourceTree = "<group>"; };
+		57AA7570215BE051005572F3 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF06F82159BF8500605F07 /* MyOwnPlasticFishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOwnPlasticFishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF06FB2159BF8500605F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57CF07042159BF8700605F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +43,10 @@
 		57CF07122159BF8700605F07 /* MyOwnPlasticFishesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOwnPlasticFishesTests.swift; sourceTree = "<group>"; };
 		57CF07142159BF8700605F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF07222159C0C000605F07 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		57EBEC2B215BD48600048136 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		57EBEC2D215BD82500048136 /* FishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesTableViewController.swift; sourceTree = "<group>"; };
+		57EBEC2E215BD82500048136 /* FishesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FishesTableViewController.xib; sourceTree = "<group>"; };
+		57EBEC31215BDBD300048136 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9C916510C8719AD4801FA1 /* Pods-MyOwnPlasticFishes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes.release.xcconfig"; sourceTree = "<group>"; };
 		86857DCE75D1241FB2EEA0DD /* Pods-MyOwnPlasticFishesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOwnPlasticFishesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyOwnPlasticFishesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AA7571215BE051005572F3 /* Kingfisher.framework in Frameworks */,
+				57EBEC36215BDE3200048136 /* Pods_MyOwnPlasticFishesTests.framework in Frameworks */,
 				41E9B033C407AECD93FF6E1C /* Pods_MyOwnPlasticFishes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +124,7 @@
 		57CF071D2159C01400605F07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				57EBEC2B215BD48600048136 /* Fish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 		57CF071F2159C02200605F07 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57EBEC2D215BD82500048136 /* FishesTableViewController.swift */,
+				57EBEC2E215BD82500048136 /* FishesTableViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +163,8 @@
 		6A45ADD33CC9A32D749D2A27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57AA7570215BE051005572F3 /* Kingfisher.framework */,
+				57EBEC31215BDBD300048136 /* Kingfisher.framework */,
 				CA141ECEEEC3458E656FA102 /* Pods_MyOwnPlasticFishes.framework */,
 				9345691925C4BDC7FE2569DB /* Pods_MyOwnPlasticFishesTests.framework */,
 			);
@@ -176,6 +193,7 @@
 				57CF06F42159BF8500605F07 /* Sources */,
 				57CF06F52159BF8500605F07 /* Frameworks */,
 				57CF06F62159BF8500605F07 /* Resources */,
+				E7C19C79354671AE205A158C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +212,6 @@
 				57CF070A2159BF8700605F07 /* Sources */,
 				57CF070B2159BF8700605F07 /* Frameworks */,
 				57CF070C2159BF8700605F07 /* Resources */,
-				FD3FF1D4942C5B843FBCC7F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CF07082159BF8700605F07 /* LaunchScreen.storyboard in Resources */,
+				57EBEC30215BD82500048136 /* FishesTableViewController.xib in Resources */,
 				57CF07052159BF8700605F07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +326,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD3FF1D4942C5B843FBCC7F5 /* [CP] Embed Pods Frameworks */ = {
+		E7C19C79354671AE205A158C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,7 +334,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -327,7 +345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishesTests/Pods-MyOwnPlasticFishesTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyOwnPlasticFishes/Pods-MyOwnPlasticFishes-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -338,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CF07232159C0C000605F07 /* DataSource.swift in Sources */,
+				57EBEC2C215BD48600048136 /* Fish.swift in Sources */,
 				57CF06FC2159BF8500605F07 /* AppDelegate.swift in Sources */,
+				57EBEC2F215BD82500048136 /* FishesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
