@@ -9,23 +9,62 @@
 import UIKit
 import Kingfisher
 
-class FishesTableViewController: UIViewController {
+class FishesTableViewController: UITableViewController {
+    
+    var fishes: [Fish]?{
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    
+    let cellId = "fishCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Fishes"
+        tableView.register(UINib(nibName: "FishesTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
         // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: -table view settings
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(74)
     }
-    */
+    
+    // MARK: -table data source
+    func loadFishes(){
+        FishService.shared.all { [weak self] fishes in
+            DispatchQueue.main.async {
+                self?.fishes = fishes
+            }
+        }
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fishes?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! FishesTableViewCell
+        
+        guard let fish = fishes?[indexPath.row] else { return cell }
+        cell.fishName.text = fish.name
+        cell.fishDescription.text = fish.webUrlString
+        cell.imageFish.kf.setImage(with: fish.imageURL!)
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard.init(name: "Detail", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "fishDetail")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
 
 }

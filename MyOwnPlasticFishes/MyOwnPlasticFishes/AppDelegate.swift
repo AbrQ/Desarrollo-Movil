@@ -16,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = FishesTableViewController(nibName: "FishesTableViewController", bundle: nil)
+        let navController = UINavigationController.init(rootViewController: viewController)
+        self.window?.rootViewController = navController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
